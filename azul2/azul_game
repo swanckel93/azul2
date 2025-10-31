@@ -1,0 +1,21 @@
+
+
+     
+from azul2.models import GameStateStatus
+
+
+class Azul:
+    def __init__(self,n_players = 2):
+        self.current_state:GameStateStatus = GameStateStatus.GAME_START
+        self.n_players:Literal[2,3,4] = n_players
+        self.state =  State()
+        self.state_handlers:
+    def game_loop():
+        if self.state.status==GameStateStatus.PLAYER_TURN:
+            self.handle_action()
+        else:
+            state_handlers[self.state.status].process()
+
+            pass
+    def handle_action:
+       
